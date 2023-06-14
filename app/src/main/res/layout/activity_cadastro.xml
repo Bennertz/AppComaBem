@@ -18,6 +18,19 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/mediterranean_cuisine2" />
 
+    <ImageView
+        android:id="@+id/imageViewFundoCadastroProdutos"
+        android:layout_width="410dp"
+        android:layout_height="402dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCozinhaMediterranea2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        app:srcCompat="@drawable/tabua2" />
+
     <TextView
         android:id="@+id/textViewCadastroProdutos"
         android:layout_width="wrap_content"
@@ -37,7 +50,7 @@
     <EditText
         android:id="@+id/editTextProdutoNome"
         android:layout_width="335dp"
-        android:layout_height="63dp"
+        android:layout_height="50dp"
         android:ems="10"
         android:hint="Digite o nome do produto."
         android:inputType="textPersonName"
@@ -46,12 +59,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408" />
+        app:layout_constraintVertical_bias="0.4" />
 
     <EditText
         android:id="@+id/editTextProdutoQuantidade"
         android:layout_width="335dp"
-        android:layout_height="63dp"
+        android:layout_height="50dp"
         android:ems="10"
         android:hint="Digite a quantidade."
         android:inputType="textPersonName"
@@ -60,12 +73,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.502" />
+        app:layout_constraintVertical_bias="0.474" />
 
     <EditText
         android:id="@+id/editTextProdutoPreco"
         android:layout_width="335dp"
-        android:layout_height="63dp"
+        android:layout_height="50dp"
         android:ems="10"
         android:hint="Digite o preço do produto."
         android:inputType="textPersonName"
@@ -74,10 +87,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.597" />
+        app:layout_constraintVertical_bias="0.547" />
 
     <ImageView
-        android:id="@+id/imageViewSenai"
+        android:id="@+id/imageViewSenai2"
         android:layout_width="410dp"
         android:layout_height="105dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -85,5 +98,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/senai_logo" />
+        app:srcCompat="@drawable/senai_logo2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
