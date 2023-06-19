@@ -89,6 +89,36 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.547" />
 
+    <Button
+        android:id="@+id/btnInserir"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Inserir"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.842" />
+
+    <Button
+        android:id="@+id/btnListar"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Listar"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.842" />
+
     <ImageView
         android:id="@+id/imageViewSenai2"
         android:layout_width="410dp"
