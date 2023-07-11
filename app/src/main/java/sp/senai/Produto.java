@@ -6,12 +6,9 @@ public class Produto implements Serializable { // Classe Serializable: passaremo
     private int produtoId;
     private String produtoNome;
     private float produtoQuantidade;
-    private double produtoPreco;
+    private float produtoPreco;
     // Método construtor
-    public Produto(String produtoNome, float produtoQuantidade, double produtoPreco) {
-        //this.produtoNome = produtoNome;
-        //this.produtoQuantidade = produtoQuantidade;
-        //this.produtoPreco = produtoPreco;
+    public Produto(String produtoNome, float produtoQuantidade, float produtoPreco) {
         setProdutoNome(produtoNome);
         setProdutoQuantidade(produtoQuantidade);
         setProdutoPreco(produtoPreco);
@@ -44,11 +41,11 @@ public class Produto implements Serializable { // Classe Serializable: passaremo
         this.produtoQuantidade = produtoQuantidade;
     }
 
-    public double getProdutoPreco() {
+    public float getProdutoPreco() {
         return produtoPreco;
     }
 
-    public void setProdutoPreco(double produtoPreco) {
+    public void setProdutoPreco(float produtoPreco) {
         this.produtoPreco = produtoPreco;
     }
 }

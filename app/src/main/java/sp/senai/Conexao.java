@@ -17,7 +17,7 @@ public class Conexao extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE produto (idproduto integer primary key autoincrement, nome_produto varchar(200), quantidade_produto float, preco_produto decimal(5,2))");
+        db.execSQL("CREATE TABLE produto (idproduto integer primary key autoincrement, nome_produto varchar(200), quantidade_produto decimal(5,2), preco_produto decimal(5,2))");
     }
 
     @Override
