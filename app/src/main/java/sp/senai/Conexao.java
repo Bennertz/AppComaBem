@@ -8,20 +8,20 @@ import androidx.annotation.Nullable;
 
 public class Conexao extends SQLiteOpenHelper {
 
-    private static final String name = "bancoDados.db";
+    private static final String bdComaBem = "ComaBem.db";
     private static final int version = 1;
 
     public Conexao(@Nullable Context context) {
-        super(context, name, null, version);
+        super(context, bdComaBem, null, version);
     }
 
     @Override
-    public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE produto (idproduto integer primary key autoincrement, nome_produto varchar(200), quantidade_produto decimal(5,2), preco_produto decimal(5,2))");
+    public void onCreate(SQLiteDatabase bdComaBem) {
+        bdComaBem.execSQL("CREATE TABLE produto (produtoId integer primary key autoincrement, produtoNome varchar(200), produtoQuantidade decimal(5,2), produtoPreco decimal(5,2))");
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+    public void onUpgrade(SQLiteDatabase bdComaBem, int oldVersion, int newVersion) {
 
     }
 }
