@@ -5,10 +5,10 @@ import java.io.Serializable;
 public class Produto implements Serializable { // Classe Serializable: passaremos dados entre as activities
     private int produtoId;
     private String produtoNome;
-    private float produtoQuantidade;
-    private float produtoPreco;
+    double produtoQuantidade;
+    double produtoPreco;
     // Método construtor
-    public Produto(String produtoNome, float produtoQuantidade, float produtoPreco) {
+    public Produto(String produtoNome, double produtoQuantidade, double produtoPreco) {
         setProdutoNome(produtoNome);
         setProdutoQuantidade(produtoQuantidade);
         setProdutoPreco(produtoPreco);
@@ -33,19 +33,19 @@ public class Produto implements Serializable { // Classe Serializable: passaremo
         this.produtoNome = produtoNome;
     }
 
-    public float getProdutoQuantidade() {
+    public double getProdutoQuantidade() {
         return produtoQuantidade;
     }
 
-    public void setProdutoQuantidade(float produtoQuantidade) {
+    public void setProdutoQuantidade(double produtoQuantidade) {
         this.produtoQuantidade = produtoQuantidade;
     }
 
-    public float getProdutoPreco() {
+    public double getProdutoPreco() {
         return produtoPreco;
     }
 
-    public void setProdutoPreco(float produtoPreco) {
+    public void setProdutoPreco(double produtoPreco) {
         this.produtoPreco = produtoPreco;
     }
 }
