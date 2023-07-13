@@ -31,9 +31,9 @@ public class CadastroActivity extends AppCompatActivity {
         EditText etProdutoNome = findViewById(R.id.editTextProdutoNome);
         String produtoNome = etProdutoNome.getText().toString();
         EditText etProdutoQuantidade = findViewById(R.id.editTextProdutoQuantidade);
-        float produtoQuantidade = etProdutoQuantidade.getText().length();
+        double produtoQuantidade = Double.parseDouble(etProdutoQuantidade.getText().toString());
         EditText etProdutoPreco = findViewById(R.id.editTextProdutoPreco);
-        float produtoPreco = etProdutoPreco.getText().length();
+        double produtoPreco = Double.parseDouble(etProdutoPreco.getText().toString());
 
         Produto produto = new Produto(produtoNome, produtoQuantidade, produtoPreco);
 
@@ -41,5 +41,9 @@ public class CadastroActivity extends AppCompatActivity {
         dao = new ProdutoDAO(this);
         long id = dao.Inserir(produto);
         Toast.makeText(this, "Produto inserido com o ID: "+ id, Toast.LENGTH_SHORT).show();
+
+        etProdutoNome.setText(null);
+        etProdutoQuantidade.setText(null);
+        etProdutoPreco.setText(null);
     }
 }
