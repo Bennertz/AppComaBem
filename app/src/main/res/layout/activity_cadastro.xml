@@ -40,7 +40,6 @@
         android:textColor="@color/black"
         android:textSize="34sp"
         android:textStyle="bold"
-        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,12 +48,11 @@
 
     <EditText
         android:id="@+id/editTextProdutoNome"
-        android:layout_width="335dp"
+        android:layout_width="350dp"
         android:layout_height="50dp"
         android:ems="10"
         android:hint="Digite o nome do produto."
         android:inputType="textPersonName"
-        android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,12 +61,11 @@
 
     <EditText
         android:id="@+id/editTextProdutoQuantidade"
-        android:layout_width="335dp"
+        android:layout_width="350dp"
         android:layout_height="50dp"
         android:ems="10"
         android:hint="Digite a quantidade."
-        android:inputType="textPersonName"
-        android:text=""
+        android:inputType="number|numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,17 +74,74 @@
 
     <EditText
         android:id="@+id/editTextProdutoPreco"
-        android:layout_width="335dp"
+        android:layout_width="350dp"
         android:layout_height="50dp"
         android:ems="10"
         android:hint="Digite o preço do produto."
-        android:inputType="textPersonName"
-        android:text=""
+        android:inputType="number|numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.547" />
+
+    <ImageView
+        android:id="@+id/imageViewImagem"
+        android:layout_width="198dp"
+        android:layout_height="134dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.723" />
+
+    <Button
+        android:id="@+id/btnProcurarImagem"
+        android:layout_width="131dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Procurar"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.694" />
+
+    <Button
+        android:id="@+id/btnInserir"
+        android:layout_width="131dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/aclonica"
+        android:onClick="inserir"
+        android:text="Inserir"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.842" />
+
+    <Button
+        android:id="@+id/btnListar"
+        android:layout_width="131dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Listar"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.842" />
 
     <ImageView
         android:id="@+id/imageViewSenai2"
