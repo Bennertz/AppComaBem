@@ -99,7 +99,7 @@
 
     <Button
         android:id="@+id/btnFotografar"
-        android:layout_width="131dp"
+        android:layout_width="150dp"
         android:layout_height="50dp"
         android:fontFamily="@font/aclonica"
         android:text="Fotografar"
