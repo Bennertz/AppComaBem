@@ -7,14 +7,13 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class ListagemActivity extends AppCompatActivity {
 
     private ListView listView;
     private ProdutoDAO dao;
-    private List<Produto> produtos;
+    private List<Produto> produto;
     private List<Produto> produtosFiltrados = new ArrayList<>();
 
     @Override
@@ -24,9 +23,9 @@ public class ListagemActivity extends AppCompatActivity {
 
         listView = findViewById(R.id.listaProdutos);
         dao = new ProdutoDAO(this);
-        produtos = dao.obterTodos();
-        produtosFiltrados.addAll(produtos);
-        ArrayAdapter<Produto> adaptador = new ArrayAdapter<Produto>(this, android.R.layout.simple_list_item_1, produtos);
+        produto = dao.obterTodos();
+        produtosFiltrados.addAll(produto);
+        ArrayAdapter<Produto> adaptador = new ArrayAdapter<Produto>(this, android.R.layout.simple_list_item_1, produto);
         listView.setAdapter(adaptador);
     }
 }
