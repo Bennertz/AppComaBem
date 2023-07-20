@@ -86,23 +86,23 @@
         app:layout_constraintVertical_bias="0.547" />
 
     <ImageView
-        android:id="@+id/imageViewImagem"
+        android:id="@+id/imageViewFoto"
         android:layout_width="198dp"
         android:layout_height="134dp"
-        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.145"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.723" />
+        app:layout_constraintVertical_bias="0.723"
+        app:srcCompat="@drawable/ic_launcher_background" />
 
     <Button
-        android:id="@+id/btnProcurarImagem"
+        android:id="@+id/btnFotografar"
         android:layout_width="131dp"
         android:layout_height="50dp"
         android:fontFamily="@font/aclonica"
-        android:text="Procurar"
+        android:text="Fotografar"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
